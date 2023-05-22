@@ -5,13 +5,15 @@
 // This file contains the JS functions for index.html
 
 "use strict";
+function countDigits() {
+  var input = document.getElementById("input").value;
+  var number = parseInt(input);
 
-// Reverses the characters in a word
-function reverseString() {
-  var input = document.getElementById("string").value;
-  var reversed = "";
-  for (var counter = input.length - 1; counter >= 0; counter--) {
-    reversed += input.charAt(counter);
+  var digitCount = 0;
+  while (number !== 0) {
+    number = Math.floor(number / 10);
+    digitCount++;
   }
-  document.getElementById("output").textContent = reversed;
+
+  document.getElementById("output").innerHTML = "Total number of digits: " + digitCount;
 }
