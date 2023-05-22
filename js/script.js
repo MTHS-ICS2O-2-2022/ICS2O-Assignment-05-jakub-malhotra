@@ -5,7 +5,8 @@
 // This file contains the JS functions for index.html
 
 "use strict";
-function countDigits() {
+
+function calculate() {
   var input = document.getElementById("input").value;
   var number = parseInt(input);
 
