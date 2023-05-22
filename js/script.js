@@ -4,8 +4,9 @@
 // Created on: May 2023
 // This file contains the JS functions for index.html
 
-"use strict"
+"use strict";
 
+// Reverses the characters in a word
 function reverseString() {
   var input = document.getElementById("string").value;
   var reversed = "";
