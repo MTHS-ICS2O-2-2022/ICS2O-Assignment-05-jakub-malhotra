@@ -52,14 +52,15 @@
       </header>
       <main class="mdl-layout__content">
         <h3>Enter a number</h3>
-      <!-- Numeric Textfield -->
-      <form action="#">
-        <p><input type="text"></p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="divisor" aria-label="input" />
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-      </form>
+        <!-- Simple Textfield -->
+        <form action="#">
+          <p>Enter a number</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="input" />
+            <label class="mdl-textfield__label" for="input"><input type="text"></label>
+            <span class="mdl-textfield__error">Input must be a number!</span>
+          </div>
+        </form>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
