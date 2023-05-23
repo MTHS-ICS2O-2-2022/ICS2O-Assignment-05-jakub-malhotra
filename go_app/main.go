@@ -18,7 +18,7 @@ func calculate() {
 
 	digitCount := 0
 	for number != 0 {
-		number = number / 10
+		number /= 10
 		digitCount++
 	}
 
